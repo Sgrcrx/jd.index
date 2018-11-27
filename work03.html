@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/weui.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/lbu.css" />
+		<link rel="stylesheet" type="text/css" href="css/crx03.css" />
+		<link rel="stylesheet" type="text/css" href="css/work03.css" />
+		<link rel="stylesheet" type="text/css" href="css/allss.css" />
+	</head>
+
+	<body>
+		<!--#app start-->
+		<div id="app">
+
+			<headers></headers>
+
+			<!--轮播图-->
+
+			<div class="box">
+				<ul>
+					<li><img src="img/ad6.jpg" /> </li>
+					<li><img src="img/ad7.jpg" /> </li>
+					<li><img src="img/ad8.jpg" /> </li>
+					<li><img src="img/ad9.jpg" /> </li>
+					<li><img src="img/ad10.jpg" /> </li>
+					<li><img src="img/ad11.jpg" /> </li>
+					<li><img src="img/ad12.jpg" /> </li>
+					<li><img src="img/ad13.jpg" /> </li>
+				</ul>
+				<div class="points"></div>
+			</div>
+
+			<!--图-->
+			<div class="bg01"><img src="img/ad0.gif" /></div>
+
+			<!--floor-01-->
+			<div class="floor-01">
+				<div class="tu01">
+					<ul>
+						<li>
+							<a href="#"><img src="img/1.png" />京东超市</a>
+						</li>
+						<li>
+							<a href="#"><img src="img/2.png" />海囤全球</a>
+						</li>
+						<li>
+							<a href="#"><img src="img/3.png" />京东时尚</a>
+						</li>
+						<li>
+							<a href="#"><img src="img/4.png" />京东生鲜</a>
+						</li>
+						<li>
+							<a href="#"><img src="img/5.png" />京东到家</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="#"><img src="img/6.png" />充值缴费</a>
+						</li>
+						<li>
+							<a href="#"><img src="img/7.png" />9.9元拼</a>
+						</li>
+						<li>
+							<a href="#"><img src="img/8.png" />领券</a>
+						</li>
+						<li>
+							<a href="#"><img src="img/9.png" />省钱</a>
+						</li>
+						<li>
+							<a href="#"><img src="img/10.png" />全部</a>
+						</li>
+					</ul>
+				</div>
+				<p></p>
+			</div>
+			<!--floor-01 end-->
+			<!--floor-s start-->
+			<div class="floor-s clear">
+				<div class="tu left"><img src="img/jdkb.jpg" /></div>
+				<p><span id="red" class="left">HOT</span></p>
+				<span id="more" class="right"><a href="#">更多</a></span>
+			</div>
+
+			<!--floor-s end-->
+
+			<!--floor-02 为你推荐-->
+			<div class="floor-02">
+				<p><span>为你推荐</span></p>
+
+				<good v-for="(item,index) in products" :title="item.title" :image="item.image" :price="item.price" :id="item.id"></good>
+			</div>
+
+			<!--floor-02 为你推荐 end-->
+
+			<!--div-->
+			<div class="cc"></div>
+			<!--floor-02-end-->
+			<footer class='weui-tab'>
+				<div class='weui-tabbar'>
+					<a href='javascript:;' class='weui-tabbar__item weui-bar__item_on'><span style='display: inline-block;position: relative;'>
+						<i class='fa fa-home'></i>
+					</span>
+						<p class='weui-tabbar__label'>首页</p>
+					</a>
+					<a href='javascript:;' class='weui-tabbar__item'>
+						<i class='fa fa-cat'>
+					</i>
+						<p class='weui-tabbar__label'>分类</p>
+					</a>
+					<a href='javascript:;' class='weui-tabbar__item'><span style='display: inline-block;position: relative;'>
+						<i class='fa fa-search'></i>
+					</span>
+						<p class='weui-tabbar__label'>搜索</p>
+					</a>
+					<a href='javascript:;' class='weui-tabbar__item'><span style='display: inline-block;position: relative;'>
+						<i class='fa fa-shopping-cart'></i>
+					</span>
+						<p class='weui-tabbar__label'>购物车</p>
+					</a>
+					<a href='javascript:;' class='weui-tabbar__item'><i class='fa fa-user'></i>
+						<p class='weui-tabbar__label'>我的</p>
+					</a>
+				</div>
+			</footer>
+
+		</div>
+		<!--#app end-->
+
+		<!--js-->
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/good.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/work03.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jd01.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+
+</html>
